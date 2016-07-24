@@ -1,0 +1,22 @@
+<ion-view view-title="Incidents" ng-controller="IncidentController" >
+    <ion-content>
+        <div class="card" ng-repeat="incident in incidents">
+            <div class="item item-divider">
+                <b>{{incident.title.toUpperCase()}}</b>
+            </div>
+            <div class="item item-text-wrap">
+                {{incident.body}}
+            </div>
+            <div class="item item-divider text-center">
+
+
+                <!--<button class="button button-small button-balanced" ng-click="viewDetails(playlist.id)">-->
+                <!--View Details-->
+                <!--</button>-->
+                <button class="button button-small button-balanced" ng-click="viewDetails(playlist.id)">
+                    View Details
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
